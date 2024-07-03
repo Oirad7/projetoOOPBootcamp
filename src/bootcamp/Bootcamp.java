@@ -65,4 +65,9 @@ public class Bootcamp {
     public int hashCode() {
         return Objects.hash(getNome(), getDescricao(), getDataInicial(), getDataFinal(), getDevsInscritos(), getConteudos());
     }
+
+    public void listarDevs(){
+        System.out.println("*** Devs Inscritos no Bootcamp ***");
+        devsInscritos.forEach(System.out::println);
+    }
 }

@@ -69,4 +69,8 @@ public class Dev {
         return Objects.hash(nome, conteudosInscritos, conteudosConcluidos);
     }
 
+    @Override
+    public String toString() {
+        return "nome='" + nome + '\'' ;
+    }
 }
